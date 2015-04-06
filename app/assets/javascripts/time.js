@@ -36,6 +36,7 @@ jQuery(document).ready(function($){
     $("#js-reset").removeClass('hidden');
     start = new Date();
     chrono();
+    return false;
   });
 
   var toggle = true
@@ -55,6 +56,7 @@ jQuery(document).ready(function($){
       start = new Date(start)
       chrono()
     }
+    return false;
   });
 
   $("#js-reset").click(function() {
@@ -64,5 +66,6 @@ jQuery(document).ready(function($){
     $("#js-time").removeClass('text-success');
     $("#js-time").removeClass('text-warning');
     $("#js-time").addClass('text-primary');
+    return false;
   });
 });

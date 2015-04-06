@@ -103,5 +103,6 @@ $(document).ready(function() {
     $('#js-place').text(place[Math.floor(Math.random() * place.length)]);
     $('#js-mood').text(mood[Math.floor(Math.random() * mood.length)]);
     $('#js-action').text(action[Math.floor(Math.random() * action.length)]);
+    return false;
   });
 });
