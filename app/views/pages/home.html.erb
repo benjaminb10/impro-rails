@@ -23,11 +23,24 @@
         <a id="js-action" href="#" class="btn btn-default btn-md btn-block">Action</a>
         <br/>
         <div class="text-center">
-        <a id="js-shuffle" href="#" class="h1 text-primary">
-          <%= fa_icon "random" %>
-        </a>
+          <a id="js-shuffle" href="#" class="h1 text-primary">
+            <%= fa_icon "random" %>
+          </a>
+          <form name="chronoForm">
+            <div class="btn-group" role="group" aria-label="...">
+              <button id="js-startstop" type="button" class="btn btn-lg btn-primary" name="startstop" onClick="chronoStart()">
+                <%= fa_icon "play", text: "Go" %>
+              </button>
+              <button type="button" name="reset" onClick="chronoReset()" class="btn btn-lg btn-default">
+                <%= fa_icon "close" %>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+
