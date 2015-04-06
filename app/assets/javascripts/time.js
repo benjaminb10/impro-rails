@@ -61,6 +61,8 @@ jQuery(document).ready(function($){
 
   $("#js-reset").click(function() {
     document.getElementById("js-time").innerHTML = "00:00:00"
+    start = new Date()
+    diff = 0
     toggle = true
     $("#js-pause").click()
     $("#js-time").removeClass('text-success');
