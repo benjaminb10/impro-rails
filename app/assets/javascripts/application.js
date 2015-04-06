@@ -13,4 +13,21 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require lib/underscore
+//= require gmaps/google
 //= require_tree .
+
+$( document ).ready(function() {
+  handler = Gmaps.build('Google');
+  handler.buildMap({
+      provider: {
+        disableDefaultUI: true,
+        zoom: 10,
+        center: new google.maps.LatLng(32, 34.65),
+      },
+      internal: {
+        id: 'map',
+      }
+    }
+  );
+});
