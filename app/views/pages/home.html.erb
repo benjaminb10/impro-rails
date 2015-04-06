@@ -17,30 +17,25 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4 col-sm-offset-4">
-        <a id="js-people" href="#" class="btn btn-default btn-md btn-block">Personnage</a>
-        <a id="js-place" href="#" class="btn btn-default btn-md btn-block">Lieu</a>
-        <a id="js-mood" href="#" class="btn btn-default btn-md btn-block">Humeur</a>
-        <a id="js-action" href="#" class="btn btn-default btn-md btn-block">Action</a>
-        <br/>
-        <div class="text-center">
-          <a id="js-shuffle" href="#" class="h1 text-primary">
-            <%= fa_icon "random" %>
-          </a>
-          <form name="chronoForm">
-            <div class="btn-group" role="group" aria-label="...">
-              <button id="js-startstop" type="button" class="btn btn-lg btn-primary" name="startstop" onClick="chronoStart()">
-                <%= fa_icon "play", text: "Go" %>
-              </button>
-              <button type="button" name="reset" onClick="chronoReset()" class="btn btn-lg btn-default">
-                <%= fa_icon "close" %>
-              </button>
-            </div>
-          </form>
+        <div class="well">        
+          <a id="js-people" href="#" class="btn btn-default btn-md btn-block">Personnage</a>
+          <a id="js-place" href="#" class="btn btn-default btn-md btn-block">Lieu</a>
+          <a id="js-mood" href="#" class="btn btn-default btn-md btn-block">Humeur</a>
+          <a id="js-action" href="#" class="btn btn-default btn-md btn-block">Action</a>
+          <br/>
+          <div class="text-center">
+            <a id="js-shuffle" href="#" class="h1 text-primary">
+              <%= fa_icon "random" %>
+            </a>
+          </div>
+        </div>
+        <div class="well text-center">
+          <h1 class="text-primary" id='js-time'>00:00:00</h1>
+          <a id='js-go' href="#" class="btn btn-lg btn-default"><%= fa_icon 'play' %></a>
+          <a id='js-pause' href="#" class="hidden btn btn-lg btn-default"><%= fa_icon 'pause' %></a>
+          <a id='js-reset' href="#" class="hidden btn btn-lg btn-default">Reset</a>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
-
