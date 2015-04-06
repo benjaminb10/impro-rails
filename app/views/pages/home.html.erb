@@ -1,7 +1,7 @@
 <header>
   <div class="container">
     <div class="row">
-      <div class="col-sm-4 col-sm-offset-4">
+      <div class="col-md-4 col-md-offset-4">
         <div class="alert alert-info">
           <h4>Plateform Generator</h4>
           <p>
@@ -16,24 +16,32 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-sm-4 col-sm-offset-4">
+      <div class="col-md-4 col-md-offset-4">
         <div class="well">        
           <a id="js-people" href="#" class="btn btn-default btn-md btn-block">Personnage</a>
           <a id="js-place" href="#" class="btn btn-default btn-md btn-block">Lieu</a>
           <a id="js-mood" href="#" class="btn btn-default btn-md btn-block">Humeur</a>
           <a id="js-action" href="#" class="btn btn-default btn-md btn-block">Action</a>
-          <br/>
           <div class="text-center">
-            <a id="js-shuffle" href="#" class="h1 text-primary">
+            <a id="js-shuffle" href="#" class="h1 btn btn-xl btn-default text-primary">
               <%= fa_icon "random" %>
             </a>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
         <div class="well text-center">
-          <h1 class="text-primary" id='js-time'>00:00:00</h1>
+          <div class="h2 text-primary" id='js-time'>00:00:00</div>
           <a id='js-go' href="#" class="btn btn-lg btn-default"><%= fa_icon 'play' %></a>
           <a id='js-pause' href="#" class="hidden btn btn-lg btn-default"><%= fa_icon 'pause' %></a>
-          <a id='js-reset' href="#" class="hidden btn btn-lg btn-default">Reset</a>
+          <a id='js-reset' style="margin-left:12px" href="#" class="hidden btn btn-lg btn-default">Reset</a>
         </div>
       </div>
     </div>
