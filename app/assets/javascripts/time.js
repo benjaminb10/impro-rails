@@ -30,6 +30,8 @@ jQuery(document).ready(function($){
 
   $("#js-go").click(function() {
     $("#js-go").hide();
+    $("#js-time").removeClass('text-primary');
+    $("#js-time").addClass('text-success');
     $("#js-pause").removeClass('hidden');
     $("#js-reset").removeClass('hidden');
     start = new Date();
@@ -42,9 +44,13 @@ jQuery(document).ready(function($){
       clearTimeout(timerID)
       toggle = false
       $(this).html("<i class='fa fa-play'></i>")
+      $("#js-time").removeClass('text-success');
+      $("#js-time").addClass('text-warning');
     } else {
       toggle = true
       $(this).html("<i class='fa fa-pause'></i>")
+      $("#js-time").removeClass('text-warning');
+      $("#js-time").addClass('text-success');
       start = new Date()-diff
       start = new Date(start)
       chrono()
@@ -53,6 +59,10 @@ jQuery(document).ready(function($){
 
   $("#js-reset").click(function() {
     document.getElementById("js-time").innerHTML = "00:00:00"
-    start = new Date();
+    toggle = true
+    $("#js-pause").click()
+    $("#js-time").removeClass('text-success');
+    $("#js-time").removeClass('text-warning');
+    $("#js-time").addClass('text-primary');
   });
 });
