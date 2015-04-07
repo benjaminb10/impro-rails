@@ -1,49 +1,36 @@
-<header>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-md-offset-4">
-        <div class="alert alert-info">
-          <h4>Plateform Generator</h4>
-          <p>
-            Générez une plateforme au hasard.
-          </p>
-        </div>
-      </div>
-    </div>
+<section class="page page-right page-jumbo">
+  <div class="generator">      
+    <a href="#" class="h4 text-primary" id="js-people">Personnage</a>
+    <hr/>
+    <a href="#" class="h4 text-primary" id="js-place">Lieu</a>
+    <hr/>
+    <a href="#" class="h4 text-primary" id="js-mood">Humeur</a>
+    <hr/>
+    <a href="#" class="h4 text-primary" id="js-action">Action</a>
+    <hr/>
+    <a id="js-shuffle" href="#" class="h1 btn btn-lg btn-primary">
+      <%= fa_icon "random", text: 'Générer une plateforme' %>
+    </a>
   </div>
-</header>
 
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-md-offset-4">
-        <div class="well">        
-          <a id="js-people" href="#" class="btn btn-default btn-md btn-block">Personnage</a>
-          <a id="js-place" href="#" class="btn btn-default btn-md btn-block">Lieu</a>
-          <a id="js-mood" href="#" class="btn btn-default btn-md btn-block">Humeur</a>
-          <a id="js-action" href="#" class="btn btn-default btn-md btn-block">Action</a>
-          <div class="text-center">
-            <a id="js-shuffle" href="#" class="h1 btn btn-xl btn-default text-primary">
-              <%= fa_icon "random" %>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="chronometer">
+    <div class="alert text-center">
+    <div class="h2 text-primary" id='js-time'>00:00:00</div>
+    <a id='js-go' href="#" class="btn btn-lg btn-default"><%= fa_icon 'play' %></a>
+    <a id='js-pause' href="#" class="hidden btn btn-lg btn-default"><%= fa_icon 'pause' %></a>
+    <a id='js-reset' style="margin-left:12px" href="#" class="hidden btn btn-lg btn-default">Reset</a>
   </div>
 </section>
 
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-md-offset-4">
-        <div class="well text-center">
-          <div class="h2 text-primary" id='js-time'>00:00:00</div>
-          <a id='js-go' href="#" class="btn btn-lg btn-default"><%= fa_icon 'play' %></a>
-          <a id='js-pause' href="#" class="hidden btn btn-lg btn-default"><%= fa_icon 'pause' %></a>
-          <a id='js-reset' style="margin-left:12px" href="#" class="hidden btn btn-lg btn-default">Reset</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<aside class="sidebar sidebar-left sidebar-jumbo">
+  <header class="about">
+    <h1>Plateform Generator</h1>
+    <h3>
+      Générez une plateforme au hasard.
+    </h3>
+    <br/>
+    <p class="contact text-primary text-right">
+      Contact : <a href="mailto:benjamin.benoudis@gmail.com">benjamin.benoudis@gmail.com</a>
+    </p>
+  </header>
+</aside>
