@@ -14,9 +14,8 @@
   </div>
 
   <div class="chronometer">
-    <div class="alert text-center">
-    <div class="h2 text-primary" id='js-time'>00:00:00</div>
-    <a id='js-go' href="#" class="btn btn-lg btn-default"><%= fa_icon 'play' %></a>
+    <a href="#" class="time h2 text-primary hidden" id='js-time'>00:00:00</a>
+    <a id='js-go' href="#" class="btn btn-lg btn-default"><%= fa_icon 'play', text: "Commencer maintenant" %></a>
     <a id='js-pause' href="#" class="hidden btn btn-lg btn-default"><%= fa_icon 'pause' %></a>
     <a id='js-reset' style="margin-left:12px" href="#" class="hidden btn btn-lg btn-default">Reset</a>
   </div>

@@ -30,7 +30,7 @@ jQuery(document).ready(function($){
 
   $("#js-go").click(function() {
     $("#js-go").hide();
-    $("#js-time").removeClass('text-primary');
+    $("#js-time").removeClass('hidden text-primary');
     $("#js-time").addClass('text-success');
     $("#js-pause").removeClass('hidden');
     $("#js-reset").removeClass('hidden');
